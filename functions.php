@@ -22,7 +22,7 @@ function hds_child_theme_header_metadata() {
 
 ?>
 
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.google-analytics.com *.paypal.com ajax.googleapis.com *.googletagmanager.com use.fontawesome.com *.google.com *.unpkg.com fonts.googleapis.com fonts.gstatic.com unpkg.com *.fontawesome.com *.gravatar.com *.googlesyndication.com *.wp.com www.paypalobjects;frame-src 'self' *.youtube.com *.google.com;object-src 'none';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval'  data: *.google-analytics.com *.paypal.com ajax.googleapis.com *.googletagmanager.com use.fontawesome.com *.google.com *.unpkg.com fonts.googleapis.com fonts.gstatic.com unpkg.com *.fontawesome.com *.gravatar.com *.googlesyndication.com *.wp.com *.paypalobjects.com;frame-src 'self' *.youtube.com *.google.com;object-src 'none';">
 <?php
 
 }
