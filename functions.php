@@ -13,13 +13,16 @@ function my_theme_enqueue_styles() {
     );
 }
 
-add_action( 'wp_enqueue_scripts', function(){
-  if (is_admin()) return; // don't dequeue on the backend
-  wp_deregister_script( 'jquery' );
-  wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', null, true); // register the external file
-      wp_enqueue_script('jquery'); // enqueue the external file
-});
-
+//Making jQuery Google API
+function modify_jquery() {
+  if (!is_admin()) {
+      // comment out the next two lines to load the local copy of jQuery
+      wp_deregister_script('jquery');
+      wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, '3.5.1');
+      wp_enqueue_script('jquery');
+  }
+}
+add_action('init', 'modify_jquery');
 /**
  * Content security policy
 */
