@@ -23,3 +23,12 @@ function modify_jquery() {
   }
 }
 add_action('init', 'modify_jquery');
+
+//Google Tag Manager
+// Add Google Tag code which is supposed to be placed after opening body tag.
+add_action( 'wp_body_open', 'wpdoc_add_custom_body_open_code' );
+ 
+function wpdoc_add_custom_body_open_code() {
+  if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); }
+}
+
