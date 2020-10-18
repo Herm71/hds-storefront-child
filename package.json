@@ -1,0 +1,23 @@
+{
+  "name": "storefront-child",
+  "version": "1.0.14",
+  "description": "HDS Storefront Child WordPress Theme",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Herm71/hds-storefront-child.git"
+  },
+  "keywords": [
+    "hds",
+    "storefront-child"
+  ],
+  "author": "@Herm71",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Herm71/hds-storefront-child/issues"
+  },
+  "homepage": "https://github.com/Herm71/hds-storefront-child#readme"
+}
