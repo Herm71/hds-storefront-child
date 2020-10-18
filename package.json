@@ -5,6 +5,7 @@
     "main": "index.php",
     "scripts": {
         "release": "standard-version"
+        "postchangelog": "cat package.json | grep '\"version\"' > VERSION"
     },
     "repository": {
         "type": "git",

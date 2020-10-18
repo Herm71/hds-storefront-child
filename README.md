@@ -1,28 +1,13 @@
-# README #
+## Home Decor Specialists WooCommerce Storefront Child Theme ##
 
-Home Decor Specialists WooCommerce Storefront Child Theme
+[![GitHub version](https://badge.fury.io/gh/Herm71%2Fhds-storefront-child.svg)](https://badge.fury.io/gh/Herm71%2Fhds-storefront-child)
 
-### What is this repository for? ###
+[![GitHub version](https://badgen.net/github/license/micromatch/micromatch)](/github/:topic<license>/:Herm71/:hds-storefront-child)
 
-* Quick summary
-* [![GitHub version](https://badge.fury.io/gh/Herm71%2Fhds-storefront-child.svg)](https://badge.fury.io/gh/Herm71%2Fhds-storefront-child)
+Child theme of WooCommerce [Storefront](https://woocommerce.com/storefront/) theme.
 
-### How do I get set up? ###
+The purpose of developing this theme is to add customizations such as Google Analytics and additional CSS without affecting the parent theme.
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+### Developer ###
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* [Jason Chafin](https://github.com/Herm71)
