@@ -5,8 +5,7 @@ Home Decor Specialists WooCommerce Storefront Child Theme
 ### What is this repository for? ###
 
 * Quick summary
-* [![GitHub version](https://badge.fury.io/gh/conventional-changelog%2Fstandard-version.svg)]
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* [![GitHub version](https://badge.fury.io/gh/Herm71%2Fhds-storefront-child.svg)](https://badge.fury.io/gh/Herm71%2Fhds-storefront-child)
 
 ### How do I get set up? ###
 
