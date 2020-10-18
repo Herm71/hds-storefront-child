@@ -1,6 +1,6 @@
 {
     "name": "storefront-child",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "description": "HDS Storefront Child WordPress Theme",
     "main": "index.php",
     "scripts": {
