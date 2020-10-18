@@ -25,10 +25,32 @@ function modify_jquery() {
 add_action('init', 'modify_jquery');
 
 //Google Tag Manager
+// Add Google Tag code which is supposed to be placed after opening head tag.
+add_action('wp_head', 'bb_gtm_head');
+function bb_gtm_head(){
+  echo "<!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5LMPKPJ');</script>
+  <!-- End Google Tag Manager -->";
+}
 // Add Google Tag code which is supposed to be placed after opening body tag.
-add_action( 'wp_body_open', 'wpdoc_add_custom_body_open_code' );
+add_action( 'wp_body_open', 'bb_gtm_body' );
  
-function wpdoc_add_custom_body_open_code() {
-  if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); }
+function bb_gtm_body() {
+  echo '<!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LMPKPJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->';
 }
 
+// add_action('woocommerce_thankyou','google_analytics_transaction_tracker');
+
+// function google_analytics_transaction_tracking($order_id){
+//   $order = wc_get_order($order_id);
+//   $myuser_id = (int)$order->user_id;
+//   $user_info = get_userdata($myuser_id);
+//   $items = $order->get_items();
+// }
