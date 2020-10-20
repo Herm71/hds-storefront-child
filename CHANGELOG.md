@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/Herm71/hds-storefront-child/compare/v1.1.16...v1.2.0) (2020-10-20)
+
+
+### Features
+
+* :zap: Gulp file dialed ([e5f13ae](https://github.com/Herm71/hds-storefront-child/commit/e5f13ae7f210162d04328b6bee69ab5d43736f56))
+* :zap: work on functions and gulp tasks ([91d4669](https://github.com/Herm71/hds-storefront-child/commit/91d4669736c7a73a8efd78b2feb890aaa37703c4))
+
 ### [1.1.16](https://github.com/Herm71/hds-storefront-child/compare/v1.1.15...v1.1.16) (2020-10-19)
 
 ### [1.1.15](https://github.com/Herm71/hds-storefront-child/compare/v1.1.14...v1.1.15) (2020-10-19)
