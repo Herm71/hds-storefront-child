@@ -18,6 +18,8 @@ dist/
 
 # Package files
 *.jar
+bundled/
+languages/
 
 # Maven
 target/
