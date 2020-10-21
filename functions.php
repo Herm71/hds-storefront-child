@@ -29,26 +29,23 @@ function hds_storefront_child_enqueue_styles() {
  */
 
   function hds_storefront_child_enqueue_additional_assets() {
-//main bundle.css for customizations
-wp_enqueue_style( 'hds-main-stylesheet', get_stylesheet_directory_uri() . '/dist/css/bundle.css', array(), THEME_VERSION, 'all' );
-//compiled js scripts
-wp_enqueue_script( 'hds-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array(), THEME_VERSION, true );
-  }
+        //main bundle.css for customizations
+        wp_enqueue_style( 'hds-main-stylesheet', get_stylesheet_directory_uri() . '/dist/css/bundle.css', array(), THEME_VERSION, 'all' );
+        //compiled js scripts
+        wp_enqueue_script( 'hds-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array(), THEME_VERSION, true );
+        //deregister WP jquery, register Google libraries
+        if (is_admin()) {
+            return; //Do not de-register in admin
+        } else {
+            wp_deregister_script('jquery');
+            wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, '3.5.1');
+            wp_enqueue_script('jquery');
+        }
+
+    }
   add_action('wp_enqueue_scripts', 'hds_storefront_child_enqueue_additional_assets', 11);
 
-//Making jQuery Google API
-function modify_jquery() {
-  if (!is_admin()) {
-      // comment out the next two lines to load the local copy of jQuery
-      wp_deregister_script('jquery');
-      wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, '3.5.1');
-      wp_enqueue_script('jquery');
-  }
-}
-add_action('init', 'modify_jquery');
-
-//Google Tag Manager
-// Add Google Tag code which is supposed to be placed after opening head tag.
+//Google Tag Manager after opening head tag.
 add_action('wp_head', 'bb_gtm_head');
 function bb_gtm_head(){
   echo "<!-- Google Tag Manager -->
@@ -59,7 +56,7 @@ function bb_gtm_head(){
   })(window,document,'script','dataLayer','GTM-5LMPKPJ');</script>
   <!-- End Google Tag Manager -->";
 }
-// Add Google Tag code which is supposed to be placed after opening body tag.
+// Add Google Tag code opening body tag.
 add_action( 'wp_body_open', 'bb_gtm_body' );
 
 function bb_gtm_body() {
