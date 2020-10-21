@@ -10,12 +10,13 @@
   * which has metadata in the head
   */
 
-// add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function my_theme_enqueue_styles() {
-    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/dist/css/bundle.css',
+    wp_enqueue_style( 'child-style', get_stylesheet_uri(),
         array( 'parenthandle' ),
         wp_get_theme()->get('Version') // this only works if you have Version in the style header
     );
+    wp_enqueue_script( '_themename-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array(), '1.0.0', true );
 }
 
 /**
@@ -27,7 +28,7 @@ function _themename_assets() {
 
     wp_enqueue_script( '_themename-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array(), '1.0.0', true );
   }
-  add_action('wp_enqueue_scripts', '_themename_assets');
+//   add_action('wp_enqueue_scripts', '_themename_assets');
 
 //Making jQuery Google API
 function modify_jquery() {
