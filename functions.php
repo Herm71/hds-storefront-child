@@ -13,12 +13,14 @@ define('THEME_VERSION', $theme->Version);
   * Enqueue base styles.css file
   * which has metadata in the head
   */
-// add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
-function my_theme_enqueue_styles() {
-    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri(),
+// add_action( 'wp_enqueue_scripts', 'hds_storefront_child_enqueue_styles' );
+function hds_storefront_child_enqueue_styles() {
+    // syle.css for child theme
+    wp_enqueue_style( 'hds-storefront-child-style', get_stylesheet_directory_uri(),
         array( 'parenthandle' ),
         THEME_VERSION
     );
+
 }
 
 /**
@@ -26,12 +28,13 @@ function my_theme_enqueue_styles() {
  * and make some other changes
  */
 
-  function themename_assets() {
-    wp_enqueue_style( '_themename-stylesheet', get_stylesheet_directory_uri() . '/dist/css/bundle.css', array(), THEME_VERSION, 'all' );
-
-    wp_enqueue_script( '_themename-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array(), '1.0.0', true );
+  function hds_storefront_child_enqueue_additional_assets() {
+//main bundle.css for customizations
+wp_enqueue_style( 'hds-main-stylesheet', get_stylesheet_directory_uri() . '/dist/css/bundle.css', array(), THEME_VERSION, 'all' );
+//compiled js scripts
+wp_enqueue_script( 'hds-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array(), THEME_VERSION, true );
   }
-  add_action('wp_enqueue_scripts', 'themename_assets');
+  add_action('wp_enqueue_scripts', 'hds_storefront_child_enqueue_additional_assets', 11);
 
 //Making jQuery Google API
 function modify_jquery() {
