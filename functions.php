@@ -4,17 +4,20 @@
  *
  * @package storefront-child
  */
-
+/**
+ * Setup
+ */
+$theme = wp_get_theme();
+define('THEME_VERSION', $theme->Version);
  /**
   * Enqueue base styles.css file
   * which has metadata in the head
   */
-
 // add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function my_theme_enqueue_styles() {
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri(),
         array( 'parenthandle' ),
-        wp_get_theme()->get('Version') // this only works if you have Version in the style header
+        THEME_VERSION
     );
 }
 
@@ -23,12 +26,12 @@ function my_theme_enqueue_styles() {
  * and make some other changes
  */
 
-  function _themename_assets() {
-    wp_enqueue_style( '_themename-stylesheet', get_stylesheet_directory_uri() . '/dist/css/bundle.css', array(), '1.0.0', 'all' );
+  function themename_assets() {
+    wp_enqueue_style( '_themename-stylesheet', get_stylesheet_directory_uri() . '/dist/css/bundle.css', array(), THEME_VERSION, 'all' );
 
     wp_enqueue_script( '_themename-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array(), '1.0.0', true );
   }
-  add_action('wp_enqueue_scripts', '_themename_assets');
+  add_action('wp_enqueue_scripts', 'themename_assets');
 
 //Making jQuery Google API
 function modify_jquery() {
