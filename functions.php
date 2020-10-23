@@ -156,3 +156,10 @@ add_action( 'wp', 'hds_storefront_remove_title_from_home_homepage_template' );
 function hds_storefront_remove_title_from_home_homepage_template() {
    remove_action( 'storefront_homepage', 'storefront_homepage_header', 10 );
 }
+
+// Remove Woocommerce credits from Footer
+function hds_remove_wc_footer_credits() {
+    echo "";
+}
+
+add_action('storefront_credit_link', 'hds_remove_wc_footer_credits');
