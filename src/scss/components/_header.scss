@@ -1,0 +1,14 @@
+#masthead {
+    margin-bottom: 3.6rem;
+    background-size: cover;
+    position: relative;
+}
+
+.site-header {
+    padding-top: 0;
+    border-bottom: none;
+    .site-branding {
+        padding: 3em 0;
+        margin-bottom: 0
+    }
+}

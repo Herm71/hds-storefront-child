@@ -1,3 +1,9 @@
+//
+// Mixins
+//===============================
+//
+// Media Queries
+//===============================
 // Use media queries like this:
 // @include media-query($on-palm) {
 //   .wrapper {
@@ -11,6 +17,9 @@
     }
 }
 
+//
+// Font Sizes
+//===============================
 @mixin relative-font-size($ratio) {
     font-size: $base-font-size * $ratio;
 }

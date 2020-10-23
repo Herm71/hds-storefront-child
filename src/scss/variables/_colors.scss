@@ -1,7 +1,6 @@
-/**
- * Home Decor Specialists
- */
-
+//
+// Home Decor Specialists colors
+//===============================
 $hds--primary-blue: #003c6c;
 $hds--primary-yellow: #fdc700;
 $hds--light-blue: #006aad;
@@ -11,11 +10,9 @@ $hds--light-orange: #ffbf00;
 $hds--green: #93c02d;
 $hds--blue-green: #007988;
 $hds--magenta: #da216d;
-
-/**
-  * General Colors
-  */
-
+//
+// General Colors
+//===============================
 $color__background-body: #fefefe;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
@@ -34,6 +31,6 @@ $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
-$color__white: #fff;
+$color__white: #fcfcfc;
 // Gradients
 $hds-gradient-ltr: linear-gradient(15deg, #003c6c, #006aad);

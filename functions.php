@@ -103,22 +103,21 @@ function bb_gtm_body() {
         wp_nav_menu( array(
             'theme_location' => 'top-menu',
             'container' =>  'div',
-            'container_class' => 'top-navigation secondary-navigation',
+            'container_class' => 'top-navigation menu-secondary-menu-container',
             'fallback_cb' => '',
          ));
     }
 }
 
-add_action( 'storefront_before_header', 'hds_top' );
+add_action( 'storefront_header', 'hds_top' );
 
 function hds_top (){
-    echo '<section id="top-bar" class="hds-header-bar-outer">';
-    echo '<div class="col-full">';
-    echo '<div class="hds-header-bar-inner">';
+    echo '<section id="top-bar" class="hds-header-bar">';
+
     echo '<a class="skip-link screen-reader-text" href="#site-navigation">Skip to navigation</a>
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>';
-    ?><nav class="secondary-navigation top-navigation" role="navigation" aria-label="<?php._e( 'Secondary Menu', 'hds-storefront-child' )?>">
-    <?php
+    echo '<nav class="secondary-navigation top-navigation" role="navigation" aria-label="Secondary Menu">';
+
     hds_top_menu();
     echo '</nav>';
     echo '<div class="hds-header-bar-widget site-search">';
@@ -128,8 +127,7 @@ function hds_top (){
      echo'</div>';
      }
     echo '</div>';
-    echo '</div>';
-    echo '</div>';
+
     echo '</section>';
 }
 
