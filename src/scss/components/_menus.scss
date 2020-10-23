@@ -1,3 +1,14 @@
+#page {
+    #site-navigation {
+        border-bottom-color: #151515;
+    }
+}
+
+#site-navigation {
+    border-bottom: solid 9px #1f1d1d;
+    width: 100%;
+}
+
 .secondary-navigation>div>ul.menu,
 .secondary-navigation>div>ul.nav-menu {
     float: none;
@@ -13,8 +24,8 @@
     }
 }
 
-// .secondary-navigation>div>ul.menu>li:first-child>a {
-//     @include media-query($on-desktop) {
-//         padding-left: 0;
-//     }
-// }
+.site-header {
+    .storefront-primary-navigation {
+        background-color: $color_white;
+    }
+}
