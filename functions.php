@@ -112,8 +112,9 @@ function bb_gtm_body() {
 add_action( 'storefront_before_header', 'hds_top' );
 
 function hds_top (){
-   echo '<div class="col-full">';
-   echo '<section class="hds-header-bar">';
+    echo '<section id="top-bar" class="hds-header-bar-outer">';
+    echo '<div class="col-full">';
+    echo '<div class="hds-header-bar-inner">';
     echo '<a class="skip-link screen-reader-text" href="#site-navigation">Skip to navigation</a>
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>';
     ?><nav class="secondary-navigation top-navigation" role="navigation" aria-label="<?php._e( 'Secondary Menu', 'hds-storefront-child' )?>">
@@ -122,13 +123,14 @@ function hds_top (){
     echo '</nav>';
     echo '<div class="hds-header-bar-widget site-search">';
     if ( is_active_sidebar( 'top-sidebar' ) ) {
-        echo '<div id="site-search" class="widget woocommerce widget_product_search">';
-            dynamic_sidebar('top-sidebar');
-        echo'</div>';
+     echo '<div id="site-search" class="widget woocommerce widget_product_search">';
+         dynamic_sidebar('top-sidebar');
+     echo'</div>';
      }
     echo '</div>';
-   echo '</section>';
-   echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</section>';
 }
 
 // Remove search from header

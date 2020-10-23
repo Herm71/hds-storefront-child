@@ -1,0 +1,27 @@
+        .hds-header-bar-outer {
+            @include media-query($on-desktop) {
+                background: rgba(17, 17, 17, .56);
+                border-bottom: solid 1px rgba(255, 255, 255, .2);
+            }
+            .hds-header-bar-inner {
+                display: grid;
+                @include media-query($on-desktop) {
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                }
+                .top-navigation {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+        .hds-header-bar-widget {
+            justify-self: end;
+            &.site-search {
+                width: 15em;
+                margin-bottom: 0;
+            }
+            .widget {
+                margin-bottom: 0;
+            }
+        }

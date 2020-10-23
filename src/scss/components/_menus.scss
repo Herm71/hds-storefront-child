@@ -1,0 +1,12 @@
+.top-navigation {
+    .menu {
+        @include media-query($on-desktop) {
+            float: none;
+        }
+        >li {
+            >a {
+                color: #fcfcfc;
+            }
+        }
+    }
+}
