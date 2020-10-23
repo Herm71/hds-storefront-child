@@ -30,7 +30,9 @@
             border-left-color: $color_white;
         }
         .site-title,
+        .site-title a,
         .site-description {
+            color: $color_white;
             @include media-query($on-large-screen) {
                 float: left;
             }
