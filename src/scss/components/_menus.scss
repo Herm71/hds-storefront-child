@@ -4,6 +4,7 @@
 }
 
 .secondary-navigation>div>ul.menu>li>a {
+    color: $color_white;
     @include media-query($on-desktop) {
         padding: 1.2em .857em;
     }

@@ -13,24 +13,24 @@ $hds_magenta: #da216d;
 //
 // General Colors
 //===============================
-$color__background-body: #fefefe;
-$color__background-screen: #f1f1f1;
-$color__background-hr: #ccc;
-$color__background-button: $hds_magenta;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
-$color__text-screen: #21759b;
-$color__text-input: #666;
-$color__text-input-focus: #111;
-$color__link: $hds_light-blue;
-$color__link-visited: $hds_primary-blue;
-$color__link-hover: #003c6c;
-$color__text-main: #0a0a0a;
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
-$color__border-button-focus: #aaa #bbb #bbb;
-$color__border-input: #ccc;
-$color__border-abbr: #666;
-$color__white: #fcfcfc;
+$color_background-body: #fefefe;
+$color_background-screen: #f1f1f1;
+$color_background-hr: #ccc;
+$color_background-button: $hds_magenta;
+$color_background-pre: #eee;
+$color_background-ins: #fff9c0;
+$color_text-screen: #21759b;
+$color_text-input: #666;
+$color_text-input-focus: #111;
+$color_link: $hds_light-blue;
+$color_link-visited: $hds_primary-blue;
+$color_link-hover: #003c6c;
+$color_text-main: #0a0a0a;
+$color_border-button: #ccc #ccc #bbb;
+$color_border-button-hover: #ccc #bbb #aaa;
+$color_border-button-focus: #aaa #bbb #bbb;
+$color_border-input: #ccc;
+$color_border-abbr: #666;
+$color_white: #fcfcfc;
 // Gradients
 $hds-gradient-ltr: linear-gradient(15deg, #003c6c, #006aad);
