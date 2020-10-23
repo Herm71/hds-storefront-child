@@ -1,58 +1,54 @@
-#page {
-    #site-navigation {
-        border-bottom-color: #151515;
+// Masthead
+// =================================
+#masthead {
+    margin-bottom: 3.6rem;
+    background-size: cover;
+    position: relative;
+    >.col-full {
+        @include media-query ($on-large-screen) {
+            box-sizing: content-box;
+            position: relative;
+        }
+    }
+    .site-description {
+        @include media-query($on-large-screen) {
+            margin-top: .2em;
+        }
     }
 }
 
-#site-navigation {
-    border-bottom: solid 9px #1f1d1d;
-    width: 100%;
-}
-
-.secondary-navigation>div>ul.menu,
-.secondary-navigation>div>ul.nav-menu {
-    float: none;
-}
-
-.secondary-navigation>div>ul.menu>li>a {
-    color: $color_white;
-    @include media-query($on-desktop) {
-        padding: 1.2em .857em;
-    }
-    &:first-child {
-        padding-left: 0;
-    }
-}
-
+// Header
+// =================================
 .site-header {
-    .storefront-primary-navigation {
-        background-color: $color_white;
+    padding-top: 0;
+    border-bottom: none;
+    .site-branding {
+        padding: 3em 0;
+        margin-bottom: 0;
+        color: $color_white;
+        .site-description {
+            border-left-color: $color_white;
+        }
+        .site-title,
+        .site-title a,
+        .site-description {
+            color: $color_white;
+            @include media-query($on-large-screen) {
+                float: left;
+            }
+        }
+    }
+    .site-description {
+        @include media-query($on-large-screen) {
+            border-left: solid 1px rgba(255, 255, 255, .57);
+            padding: .6em 0;
+            padding-left: 1.25em;
+            margin-top: 1.5em;
+            margin-left: 1.25em;
+        }
     }
 }
 
-
-}
-.site-title,
-.site-title a,
-.site-description {
-    color: $color_white;
-    @include media-query($on-large-screen) {
-        float: left;
-    }
-}
-
-}
-.site-description {
-    @include media-query($on-large-screen) {
-        border-left: solid 1px rgba(255, 255, 255, .57);
-        padding: .6em 0;
-        padding-left: 1.25em;
-        margin-top: 1.5em;
-        margin-left: 1.25em;
-    }
-}
-
-}
 // Top Bar
 // =================================
 .hds-header-bar {
@@ -71,6 +67,7 @@
         margin-bottom: 0;
     }
 }
+
 .hds-header-bar-widget {
     justify-self: end;
     &.site-search {
