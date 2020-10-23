@@ -149,5 +149,10 @@ function hds_move_cart() {
 }
 add_action( 'init', 'hds_move_cart' );
 
+// Remove Title from Homepage Template
 
+add_action( 'wp', 'hds_storefront_remove_title_from_home_homepage_template' );
 
+function hds_storefront_remove_title_from_home_homepage_template() {
+   remove_action( 'storefront_homepage', 'storefront_homepage_header', 10 );
+}

@@ -1,14 +1,78 @@
+// Masthead
+// =================================
 #masthead {
     margin-bottom: 3.6rem;
     background-size: cover;
     position: relative;
+    >.col-full {
+        @include media-query ($on-large-screen) {
+            box-sizing: content-box;
+            position: relative;
+        }
+    }
+    .site-description {
+        @include media-query($on-large-screen) {
+            margin-top: .2em;
+        }
+    }
 }
 
+// Header
+// =================================
 .site-header {
     padding-top: 0;
     border-bottom: none;
     .site-branding {
         padding: 3em 0;
-        margin-bottom: 0
+        margin-bottom: 0;
+        color: $color__white;
+        .site-description {
+            border-left-color: $color__white;
+        }
+        .site-title,
+        .site-description {
+            @include media-query($on-large-screen) {
+                float: left;
+            }
+        }
+    }
+    .site-description {
+        @include media-query($on-large-screen) {
+            border-left: solid 1px rgba(255, 255, 255, .57);
+            padding: .6em 0;
+            padding-left: 1.25em;
+            margin-top: 1.5em;
+            margin-left: 1.25em;
+        }
+    }
+}
+
+// Top Bar
+// =================================
+.hds-header-bar {
+    display: grid;
+    @include media-query($on-desktop) {
+        background: rgba(17, 17, 17, .56);
+        border-bottom: solid 1px rgba(255, 255, 255, .2);
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin-left: -9999px;
+        margin-right: -9999px;
+        padding-left: 9999px;
+        padding-right: 9999px;
+    }
+    .top-navigation {
+        margin-bottom: 0;
+    }
+}
+
+.hds-header-bar-widget {
+    justify-self: end;
+    &.site-search {
+        width: 15em;
+        margin-bottom: 0;
+    }
+    .widget {
+        margin-bottom: 0;
     }
 }
