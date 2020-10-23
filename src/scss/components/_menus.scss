@@ -1,0 +1,19 @@
+.secondary-navigation>div>ul.menu,
+.secondary-navigation>div>ul.nav-menu {
+    float: none;
+}
+
+.secondary-navigation>div>ul.menu>li>a {
+    @include media-query($on-desktop) {
+        padding: 1.2em .857em;
+    }
+    &:first-child {
+        padding-left: 0;
+    }
+}
+
+// .secondary-navigation>div>ul.menu>li:first-child>a {
+//     @include media-query($on-desktop) {
+//         padding-left: 0;
+//     }
+// }
