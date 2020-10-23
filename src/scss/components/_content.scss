@@ -1,6 +1,22 @@
+body {
+    background-color: $color_white!important;
+}
+
 #content>.col-full {
     @include media-query ($on-large-screen) {
         box-sizing: content-box;
         position: relative;
+    }
+}
+
+.page-template-template-homepage {
+    .entry-content {
+        max-width: 100%;
+    }
+}
+
+.page-template-template-homepage {
+    .entry-header {
+        max-width: 100%;
     }
 }

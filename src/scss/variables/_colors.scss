@@ -1,29 +1,24 @@
 //
 // Home Decor Specialists colors
 //===============================
-$hds_primary-blue: #003c6c;
-$hds_primary-yellow: #fdc700;
-$hds_light-blue: #006aad;
-$hds_lighter-blue: #13a5dc;
-$hds_orange: #f29813;
-$hds_light-orange: #ffbf00;
-$hds_green: #93c02d;
-$hds_blue-green: #007988;
-$hds_magenta: #da216d;
+$hds_brown: #362422;
+$hds_red: #741F1A;
+$hds_orange: #F5821F;
+$hds_green: #A5CE3A;
 //
 // General Colors
 //===============================
 $color_background-body: #fefefe;
 $color_background-screen: #f1f1f1;
 $color_background-hr: #ccc;
-$color_background-button: $hds_magenta;
+$color_background-button: $hds_red;
 $color_background-pre: #eee;
 $color_background-ins: #fff9c0;
 $color_text-screen: #21759b;
 $color_text-input: #666;
 $color_text-input-focus: #111;
-$color_link: $hds_light-blue;
-$color_link-visited: $hds_primary-blue;
+$color_link: $hds_red;
+$color_link-visited: $hds_red;
 $color_link-hover: #003c6c;
 $color_text-main: #0a0a0a;
 $color_border-button: #ccc #ccc #bbb;
@@ -33,4 +28,4 @@ $color_border-input: #ccc;
 $color_border-abbr: #666;
 $color_white: #fcfcfc;
 // Gradients
-$hds-gradient-ltr: linear-gradient(15deg, #003c6c, #006aad);
+$hds_gradient-ltr: linear-gradient(15deg, #003c6c, #006aad);
