@@ -1,23 +1,23 @@
-.secondary-navigation>div>ul.menu,
-.secondary-navigation>div>ul.nav-menu {
-    float: none;
+// Masthead
+// =================================
+#masthead {
+    margin-bottom: 3.6rem;
+    background-size: cover;
+    position: relative;
+    >.col-full {
+        @include media-query ($on-large-screen) {
+            box-sizing: content-box;
+            position: relative;
+        }
+    }
+    .site-description {
+        @include media-query($on-large-screen) {
+            margin-top: .2em;
+        }
+    }
 }
 
-.secondary-navigation>div>ul.menu>li>a {
-    color: $color_white;
-    @include media-query($on-desktop) {
-        padding: 1.2em .857em;
-    }
-    &:first-child {
-        padding-left: 0;
-    }
-}
-
-// .secondary-navigation>div>ul.menu>li:first-child>a {
-//     @include media-query($on-desktop) {
-//         padding-left: 0;
-//     }
-// }eader
+// Header
 // =================================
 .site-header {
     padding-top: 0;
@@ -25,14 +25,9 @@
     .site-branding {
         padding: 3em 0;
         margin-bottom: 0;
-        .site-title {
-            a {
-                color: $color_white;
-            }
-        }
+        color: $color_white;
         .site-description {
             border-left-color: $color_white;
-            color: $color_white;
         }
         .site-title,
         .site-description {
