@@ -4,7 +4,7 @@
 
 [![GitHub version](https://badgen.net/github/license/micromatch/micromatch)](/github/:topic<license>/:Herm71/:hds-storefront-child)
 
-Child theme of WooCommerce [Storefront](https://woocommerce.com/storefront/) theme for the [HomeDecorSpecialists](https://homedecorspecialists.com) eCommerce website.
+Child theme of WooCommerce [Storefront](https://woocommerce.com/storefront/) theme for the [HomeDecorSpecialists](https://homedecorspecialists.com) eCommerce website. Based on [Homestore](https://themes.woocommerce.com/homestore/) child theme
 
 The purpose of developing this theme is to add customizations such as Google Analytics and additional CSS without affecting the parent theme.
 
