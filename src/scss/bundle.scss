@@ -1,4 +1,10 @@
-// $colour: #f03;
-// body {
-//     background-color: $colour;
-// }
+@import "variables/index";
+@import "mixins/index";
+
+/*--------------------------------------------------------------
+# Home Decor Specialists Storefront Child Theme Styles
+# @author: Blackbird Consulting
+# @url: https://github.com/Herm71/hds-storefront-child
+--------------------------------------------------------------*/
+
+@import "components/index";

@@ -1,18 +1,26 @@
 <?php
 /**
- * Storefront engine room
+ * Storefront Child Theme
  *
  * @package storefront-child
+ * @author Herm71 <jason@blackbirdconsult.com>
+ * @copyright 2020 Blackbird Consulting
+ * @link https://github.com/Herm71/hds-storefront-child
+ * @version 1.2.3
+ *
  */
 /**
  * Setup
  */
+
+// Theme version
 $theme = wp_get_theme();
 define('THEME_VERSION', $theme->Version);
- /**
-  * Enqueue base styles.css file
-  * which has metadata in the head
-  */
+
+// Theme directory
+define( 'HDS_DIR', dirname( __FILE__ ) );
+
+// enqueue base child styles
 // add_action( 'wp_enqueue_scripts', 'hds_storefront_child_enqueue_styles' );
 function hds_storefront_child_enqueue_styles() {
     // syle.css for child theme
@@ -23,27 +31,34 @@ function hds_storefront_child_enqueue_styles() {
 
 }
 
+// Enqueue custom styles and javascript and make some other changes
+
+function hds_storefront_child_enqueue_additional_assets() {
+    //main bundle.css for customizations
+    wp_enqueue_style( 'hds-main-stylesheet', get_stylesheet_directory_uri() . '/dist/css/bundle.css', array(), THEME_VERSION, 'all' );
+    //compiled js scripts
+    wp_enqueue_script( 'hds-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array(), THEME_VERSION, true );
+    //deregister WP jquery, register Google libraries
+    if (is_admin()) {
+        return; //Do not de-register in admin
+    } else {
+        wp_deregister_script('jquery');
+        wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, '3.5.1');
+        wp_enqueue_script('jquery');
+    }
+
+}
+add_action('wp_enqueue_scripts', 'hds_storefront_child_enqueue_additional_assets', 11);
+
 /**
- * Enqueue custom styles and javascript
- * and make some other changes
+ * Inculde customization files
  */
 
-  function hds_storefront_child_enqueue_additional_assets() {
-        //main bundle.css for customizations
-        wp_enqueue_style( 'hds-main-stylesheet', get_stylesheet_directory_uri() . '/dist/css/bundle.css', array(), THEME_VERSION, 'all' );
-        //compiled js scripts
-        wp_enqueue_script( 'hds-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array(), THEME_VERSION, true );
-        //deregister WP jquery, register Google libraries
-        if (is_admin()) {
-            return; //Do not de-register in admin
-        } else {
-            wp_deregister_script('jquery');
-            wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, '3.5.1');
-            wp_enqueue_script('jquery');
-        }
+include ( HDS_DIR . '/lib/init.php');
 
-    }
-  add_action('wp_enqueue_scripts', 'hds_storefront_child_enqueue_additional_assets', 11);
+/**
+ * Tracking and analytics scripts
+ */
 
 //Google Tag Manager after opening head tag.
 add_action('wp_head', 'bb_gtm_head');
@@ -65,7 +80,9 @@ function bb_gtm_body() {
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->';
 }
-
+/**
+ * Goole Analytics/Tag Manager eCommerce settings
+ */
 // add_action('woocommerce_thankyou','google_analytics_transaction_tracker');
 
 // function google_analytics_transaction_tracking($order_id){
@@ -74,3 +91,75 @@ function bb_gtm_body() {
 //   $user_info = get_userdata($myuser_id);
 //   $items = $order->get_items();
 // }
+
+
+/**
+ * Theme customizations
+ */
+
+ //Top Menu Callback
+ function hds_top_menu (){
+    if (has_nav_menu('top-menu')) {
+        wp_nav_menu( array(
+            'theme_location' => 'top-menu',
+            'container' =>  'div',
+            'container_class' => 'top-navigation menu-secondary-menu-container',
+            'fallback_cb' => '',
+         ));
+    }
+}
+
+add_action( 'storefront_header', 'hds_top' );
+
+function hds_top (){
+    echo '<section id="top-bar" class="hds-header-bar">';
+
+    echo '<a class="skip-link screen-reader-text" href="#site-navigation">Skip to navigation</a>
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>';
+    echo '<nav class="secondary-navigation top-navigation" role="navigation" aria-label="Secondary Menu">';
+
+    hds_top_menu();
+    echo '</nav>';
+    echo '<div class="hds-header-bar-widget site-search">';
+    if ( is_active_sidebar( 'top-sidebar' ) ) {
+     echo '<div id="site-search" class="widget woocommerce widget_product_search">';
+         dynamic_sidebar('top-sidebar');
+     echo'</div>';
+     }
+    echo '</div>';
+
+    echo '</section>';
+}
+
+// Remove search from header
+function hds_remove_sf_header_search() {
+
+	remove_action( 'storefront_header', 'storefront_product_search', 40 );
+
+}
+add_action( 'init', 'hds_remove_sf_header_search' );
+
+// Move shopping cart up
+
+function hds_move_cart() {
+
+    remove_action( 'storefront_header', 'storefront_header_cart', 60 );
+    add_action( 'storefront_header', 'storefront_header_cart', 30 );
+
+}
+add_action( 'init', 'hds_move_cart' );
+
+// Remove Title from Homepage Template
+
+add_action( 'wp', 'hds_storefront_remove_title_from_home_homepage_template' );
+
+function hds_storefront_remove_title_from_home_homepage_template() {
+   remove_action( 'storefront_homepage', 'storefront_homepage_header', 10 );
+}
+
+// Remove Woocommerce credits from Footer
+function hds_remove_wc_footer_credits() {
+    echo "";
+}
+
+add_action('storefront_credit_link', 'hds_remove_wc_footer_credits');

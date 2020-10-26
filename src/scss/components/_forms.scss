@@ -1,0 +1,94 @@
+.woocommerce-active {
+    .site-header {
+        .site-search {
+            @include media-query($on-desktop) {
+                width: 15em;
+            }
+            .widget_product_search input[type=text],
+            .widget_product_search input[type=search] {
+                padding: .5em 1.6em;
+                padding-left: 2.5em;
+                border-radius: 100px;
+                margin: 0.6em 0;
+            }
+        }
+        .site-header-cart {
+            @include media-query($on-desktop) {
+                position: absolute;
+                transform: translateY(-50%);
+                margin-top: -1em;
+                padding-top: 0;
+                width: 15em!important;
+                top: 72%;
+                right: 2.617924em;
+                z-index: 1;
+            }
+            .cart-contents {
+                @include media-query($on-desktop) {
+                    background: $color_white;
+                    padding: .6em 0 .6em .8em;
+                    padding-left: 2.8em;
+                    color: #150604;
+                    &::after {
+                        color: inherit;
+                        font-size: 1.05em;
+                        top: .85em;
+                        left: .8em;
+                        float: left;
+                        margin-left: -1.8em;
+                    }
+                }
+                .amount {
+                    @include media-query($on-desktop) {
+                        color: inherit;
+                        font-weight: 400;
+                        // letter-spacing: 0.327em;
+                    }
+                }
+                .count {
+                    @include media-query($on-desktop) {
+                        padding: .6em .5em;
+                        display: block;
+                        color: inherit;
+                        background: $color_white;
+                        margin: -.6em 0 0;
+                        color: #141212;
+                        text-align: center;
+                        font-size: 1em;
+                        float: right;
+                        min-width: 2.8em;
+                    }
+                }
+            }
+        }
+    }
+    &.storefront-2x {
+        .site-header {
+            .site-header-cart {
+                .cart-contents {
+                    @include media-query($on-desktop) {
+                        background: $color_white;
+                        padding: .6em 0 .6em .8em;
+                        padding-left: 2.8em;
+                        color: #150604;
+                        &::after {
+                            float: left;
+                            margin-left: -1.8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.widget_product_search {
+    form {
+        &::before {
+            top: 1.15em!important;
+            left: .85em!important;
+            color: #111!important;
+            font-size: 1.05em;
+        }
+    }
+}
