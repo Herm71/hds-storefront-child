@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Herm71/hds-storefront-child/compare/v1.2.3...v1.3.0) (2020-10-26)
+
+
+### Features
+
+* :construction: Reworked menus and added widgets ([cacd9dc](https://github.com/Herm71/hds-storefront-child/commit/cacd9dc85b5aaeedea02872aaae3163fd8b6f2e1))
+* :fire: Remove Woocommerce credits from footer ([b2b095f](https://github.com/Herm71/hds-storefront-child/commit/b2b095f95cbb661e838f476054a6624e78602d5f))
+* :lipstick: Header, branding and navs totally reworked ([64ef7f9](https://github.com/Herm71/hds-storefront-child/commit/64ef7f93f19807e3e97f3ecceb0cfd1fc1b760cc))
+
+
+### Bug Fixes
+
+* :memo: bump version on style.css ([6beef2f](https://github.com/Herm71/hds-storefront-child/commit/6beef2f62f20003e2a7895a5aa3795d4b4c1d8ec))
+
 ### [1.2.3](https://github.com/Herm71/hds-storefront-child/compare/v1.2.2...v1.2.3) (2020-10-21)
 
 
