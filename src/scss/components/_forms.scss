@@ -14,8 +14,6 @@
         }
         .site-header-cart {
             @include media-query($on-desktop) {
-                // TODO(adjust #6 positioning)
-                //@todo #4 here is another to do
                 position: absolute;
                 transform: translateY(-50%);
                 margin-top: -1em;
