@@ -8,6 +8,8 @@ Child theme of WooCommerce [Storefront](https://woocommerce.com/storefront/) the
 
 The purpose of developing this theme is to add customizations such as Google Analytics and additional CSS without affecting the parent theme.
 
+And also some other stuff.
+
 ### Developer ###
 
 * [Jason Chafin](https://github.com/Herm71)
