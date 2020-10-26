@@ -14,6 +14,15 @@
  */
 
 //TODO #5 This is a test to do issue
+
+// TODO: #7 Learn how to effectively enter to do issues
+//
+// I'm learning by doing and here's what I'm doing
+// - practicing intelligent commit messages
+// - getting a better understanding of VSCODE's Git tools
+// - learning best practices
+//
+
 // Theme version
 $theme = wp_get_theme();
 define('THEME_VERSION', $theme->Version);
