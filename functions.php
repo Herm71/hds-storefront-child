@@ -12,6 +12,7 @@
 /**
  * Setup
  */
+
 //TODO This is a test to do issue
 // Theme version
 $theme = wp_get_theme();
