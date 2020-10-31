@@ -8,6 +8,12 @@
     }
 }
 
+.page {
+    >.col-full {
+        padding: 0;
+    }
+}
+
 .page-template-template-homepage:not(.has-post-thumbnail) {
     .site-main {
         padding-top: 0;

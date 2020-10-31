@@ -67,9 +67,18 @@
     border-color: #ca0606 !important;
 }
 
-.wc-block-grid__product-onsale,
-.onsale {
+#page .onsale {
     border-color: $hds_green!important;
     background-color: $hds_green!important;
     color: $color_white!important;
+    position: absolute!important;
+    border: none;
+    text-align: center;
+    width: 53px;
+    height: 53px;
+    line-height: 53px;
+    border-radius: 53px;
+    padding: 0;
+    top: 12px;
+    left: 12px;
 }
