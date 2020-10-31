@@ -9,6 +9,14 @@
     width: 100%;
 }
 
+.primary-navigation {
+    .sub-menu {
+        a {
+            color: $color_white;
+        }
+    }
+}
+
 .secondary-navigation>div>ul.menu,
 .secondary-navigation>div>ul.nav-menu {
     float: none;

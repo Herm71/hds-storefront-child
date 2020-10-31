@@ -1,0 +1,14 @@
+.storefront-breadcrumb {
+    padding: 0!important;
+    margin: 0!important;
+}
+
+.woocommerce-breadcrumb {
+    margin: 0 0 1.618em;
+    padding: 1em 0;
+    border-bottom: solid $hds_brown;
+    @include media-query($on-desktop) {
+        padding: 1.41575em 0;
+        margin: 0 0 3.706325903em;
+    }
+}
