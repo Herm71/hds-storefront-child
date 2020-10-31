@@ -28,7 +28,7 @@
                     background: $color_white;
                     padding: .6em 0 .6em .8em;
                     padding-left: 2.8em;
-                    color: #150604;
+                    color: $color_black!important;
                     &::after {
                         color: inherit;
                         font-size: 1.05em;
