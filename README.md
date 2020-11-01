@@ -21,5 +21,5 @@ And also some other stuff.
 ## Roadmap ##
 
 * [ ] Sidebar Template
-* [ ] Style Checkout
-* [ ] Style Shopping Cart
+* [x] Style Checkout
+* [x] Style Shopping Cart
