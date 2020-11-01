@@ -17,6 +17,30 @@
     }
 }
 
+.secondary-navigation {
+    ul {
+        &.menu {
+            a {
+                color: $color_white;
+            }
+        }
+    }
+    ul.sub-menu {
+        li {
+            background: $hds_red;
+            &:hover {
+                background: $hds_brown
+            }
+            a {
+                padding: 1em 0.875em!important;
+                &:hover {
+                    color: $color_white!important;
+                }
+            }
+        }
+    }
+}
+
 .secondary-navigation>div>ul.menu,
 .secondary-navigation>div>ul.nav-menu {
     float: none;
