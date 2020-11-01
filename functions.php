@@ -13,6 +13,7 @@
  //TODO: #14 Sidebar Template
  //TODO: #15 Style Checkout page
  //TODO: #16 Style Shopping cart page
+ //TODO: Style Top bar nav drop-down
 /**
  * Setup
  */
