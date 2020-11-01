@@ -16,7 +16,7 @@ And also some other stuff.
 
 ### Roadmap ###
 
-//TODO stuff to do:
-// - [ ] create sidebar template for product pages
-// - [ ] style checkout page
-// - [ ] style shopping cart page
+- [ ] Sidebar Template
+- [ ] Style Checkout
+- [x] Style Shopping Cart
+- [ ] Mercury
