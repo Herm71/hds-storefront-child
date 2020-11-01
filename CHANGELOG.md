@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.5](https://github.com/Herm71/hds-storefront-child/compare/v1.4.4...v1.4.5) (2020-11-01)
+
+
+### Bug Fixes
+
+* :memo: bump style.css version ([f9b92de](https://github.com/Herm71/hds-storefront-child/commit/f9b92de6300388643e51e2034edff76a65bbb25b))
+
 ### [1.4.4](https://github.com/Herm71/hds-storefront-child/compare/v1.4.3...v1.4.4) (2020-11-01)
 
 
