@@ -1,14 +1,12 @@
 # Home Decor Specialists WooCommerce Storefront Child Theme #
 
-<ul>
-<li>[![Github latest release](https://badgen.net/github/release/Herm71/hds-storefront-child?icon=github)](https://github.com/Herm71/hds-storefront-child)</li>
+[![Github latest release](https://badgen.net/github/release/Herm71/hds-storefront-child?icon=github)](https://github.com/Herm71/hds-storefront-child)
 
-<li>[![Github latest tag](https://badgen.net/github/tag/Herm71/hds-storefront-child?icon=github&&color=orange)](https://github.com/Herm71/hds-storefront-child)</li>
+[![Github latest tag](https://badgen.net/github/tag/Herm71/hds-storefront-child?icon=github&&color=orange)](https://github.com/Herm71/hds-storefront-child)
 
-<li>[![GitHub issues](https://badgen.net/github/open-issues/Herm71/hds-storefront-child?icon=github)](https://github.com/Herm71/hds-storefront-child)</li>
+[![GitHub issues](https://badgen.net/github/open-issues/Herm71/hds-storefront-child?icon=github)](https://github.com/Herm71/hds-storefront-child)
 
-<li>[![TODOs](https://img.shields.io/endpoint?url=https://todos.tickgit.com/badge?repo=github.com/Herm71/hds-storefront-child)](https://todos.tickgit.com/browse?repo=github.com/Herm71/hds-storefront-child)</li>
-</ul>
+[![TODOs](https://img.shields.io/endpoint?url=https://todos.tickgit.com/badge?repo=github.com/Herm71/hds-storefront-child)](https://todos.tickgit.com/browse?repo=github.com/Herm71/hds-storefront-child)
 
 Child theme of WooCommerce [Storefront](https://woocommerce.com/storefront/) theme for the [HomeDecorSpecialists](https://homedecorspecialists.com) eCommerce website. Based on [Homestore](https://themes.woocommerce.com/homestore/) child theme
 
