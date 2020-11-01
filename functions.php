@@ -12,7 +12,6 @@
 
  //TODO: #14 Sidebar Template
  //TODO: #15 Style Checkout page
- //TODO: #16 Style Shopping cart page
  //TODO: Style Top bar nav drop-down
  //TODO: All Hex colors to variables
  //TODO: Style Widget Titles
