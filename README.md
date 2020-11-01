@@ -13,3 +13,10 @@ And also some other stuff.
 ### Developer ###
 
 * [Jason Chafin](https://github.com/Herm71)
+
+### Roadmap ###
+
+//TODO stuff to do:
+// - [ ] create sidebar template for product pages
+// - [ ] style checkout page
+// - [ ] style shopping cart page

@@ -67,9 +67,86 @@
     border-color: #ca0606 !important;
 }
 
-.wc-block-grid__product-onsale,
-.onsale {
+#page .onsale {
     border-color: $hds_green!important;
     background-color: $hds_green!important;
     color: $color_white!important;
+    position: absolute!important;
+    border: none;
+    text-align: center;
+    width: 53px;
+    height: 53px;
+    line-height: 53px;
+    border-radius: 53px;
+    padding: 0;
+    // top: 12px;
+    // left: 12px;
+}
+
+ul.products li .onsale,
+.single-product div.product .images .onsale {
+    top: 12px;
+    left: 12px;
+    z-index: 99;
+}
+
+.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
+    background-color: $hds_green!important;
+    color: $color_white!important;
+}
+
+.woocommerce-tabs ul.tabs li {
+    &.active {
+        background: $hds_brown;
+        color: $color_white!important;
+        a {
+            color: $color_white!important;
+            background: $hds_brown;
+        }
+    }
+    a {
+        color: $color_text-main;
+        padding: 1em 0 1em 1em!important;
+        &:focus {
+            outline: none!important;
+        }
+    }
+    &:not(.active) {
+        &:hover {
+            background: #f4f4f4;
+        }
+        a {
+            &:hover {
+                background: #f4f4f4;
+            }
+        }
+    }
+}
+
+//TODO Refactor this code
+a.cart-contents,
+.site-header-cart .widget_shopping_cart a {
+    color: $color_white!important;
+}
+
+.site-header-cart .widget_shopping_cart .product_list_widget .mini_cart_item a.remove:before {
+    color: red!important;
+}
+
+.site-header-cart .widget_shopping_cart,
+.site-header .product_list_widget li .quantity {
+    @include media-query($on-desktop) {
+        color: #a2a1a1 !important;
+    }
+}
+
+.site-header-cart .widget_shopping_cart p.total {
+    color: $color_white!important;
+}
+
+.added_to_cart.alt,
+.added_to_cart,
+.widget a.button.checkout {
+    background-color: $hds_red!important;
+    border-color: $hds_red!important;
 }
