@@ -9,6 +9,10 @@
  * @version 1.2.3
  *
  */
+
+ //TODO: Sidebar Template
+ //TODO: Style Checkout page
+ //TODO: Style Shopping cart page
 /**
  * Setup
  */
