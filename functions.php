@@ -10,9 +10,9 @@
  *
  */
 
- //TODO: Sidebar Template
- //TODO: Style Checkout page
- //TODO: Style Shopping cart page
+ //TODO: #14 Sidebar Template
+ //TODO: #15 Style Checkout page
+ //TODO: #16 Style Shopping cart page
 /**
  * Setup
  */
