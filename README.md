@@ -12,7 +12,65 @@ Child theme of WooCommerce [Storefront](https://woocommerce.com/storefront/) the
 
 The purpose of developing this theme is to add customizations such as Google Analytics and additional CSS without affecting the parent theme.
 
-And also some other stuff.
+## Installation ##
+
+### Prerequesites ###
+
+* **WordPress Development Environment:** Installation assumes you have a [WordPress development environment] (<https://developer.wordpress.org/themes/getting-started/setting-up-a-development-environment/>) set up. My preferred local development tool is [Lando](https://lando.dev/).
+* **WooCommerce plugin:** This is an eCommerce theme intended for sites that use [WooCommerce](https://woocommerce.com/).
+
+    ```shell
+    #Via WP-CLI
+    Herm71@blackbird:$ wp plugin install --activate woocommerce
+    ```
+
+* **WooCommerce Storefront theme:** This is a [Child Theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/) of the official [WooCommerce Storefront](https://woocommerce.com/storefront/) theme.
+
+    ```shell
+    #Via WP-CLI
+    Herm71@blackbird:$ wp theme install storefront
+    ```
+
+* **npm:** [npm](https://www.npmjs.com/) is required to install dependencies. If you are on a Mac or Linux, npm can be installed easily via [Homebrew](https://brew.sh/).
+* **gulp:** [gulp](https://www.npmjs.com/package/gulp) is required to be installed locally to run build tasks.
+
+    ```shell
+    Herm71@blackbird:$ npm -i -g gulp
+    ```
+
+### Install ###
+
+1. Clone into your Wordpress dev environment's `/themes/` folder:
+
+    ```shell
+    Herm71@blackbird:$ git clone git@github.com:Herm71/hds-storefront-child.git / myWpLocalDev/wp-content/themes/hds-storefront-child/
+    ```
+
+2. `cd` into newly created folder
+
+    ```shell
+    Herm71@blackbird:$ cd /myWpLocalDev/wp-content/themes/hds-storefront-child/
+    ```
+
+3. Install packages
+
+    ```shell
+    Herm71@blackbird:$ npm install
+    ```
+
+## Gulp tasks ##
+
+The `gulpfile.babel.js` file has several tasks available for use. Look at the actual file to see all of them. There are tasks that I do not use here. Feel free to incorporate them into your own workflow. Below are the tasks I use most often:
+
+```shell
+#Regenerate styles
+Herm71@blackbird:$ gulp styles
+```
+
+```shell
+#Build and bundle theme
+Herm71@blackbird:$ gulp build
+```
 
 ## Developer ##
 
