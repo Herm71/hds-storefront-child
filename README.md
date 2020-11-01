@@ -8,13 +8,25 @@
 
 [![TODOs](https://img.shields.io/endpoint?url=https://todos.tickgit.com/badge?repo=github.com/Herm71/hds-storefront-child)](https://todos.tickgit.com/browse?repo=github.com/Herm71/hds-storefront-child)
 
-Child theme of WooCommerce [Storefront](https://woocommerce.com/storefront/) theme for the [HomeDecorSpecialists](https://homedecorspecialists.com) eCommerce website. Based on [Homestore](https://themes.woocommerce.com/homestore/) child theme
+## Summary
 
-The purpose of developing this theme is to add customizations such as Google Analytics and additional CSS without affecting the parent theme.
+WordPress child theme of WooCommerce [Storefront](https://woocommerce.com/storefront/) theme. Can be used on any WordPress/WooCommerce site that has Storefront installed. Design inspiration from [WooCommerce Homestore](https://themes.woocommerce.com/homestore/) child theme.
 
 ## Installation ##
 
-### Prerequesites ###
+### Production ###
+
+This theme can be installed as-is to any live WordPress/WooCommerce site that has the Storefront theme installed. You can install the [Storefront](https://wordpress.org/themes/storefront/) theme from your site's **Dashboard**, you can download it from WordPress.org or you can install it via wp-cli: `wp theme install storefront`.
+
+Once Storefront is installed, you can download the [latest release](https://github.com/Herm71/hds-storefront-child/releases) of this theme, then upload and activate via the **Dashboard**.
+
+This theme is fully compatible with the WordPress theme customizer.
+
+### Develop ###
+
+Feel free to use this as a base to develop your own child theme. I am not accepting pull-requests on forks for this project, so if you clone this to your own project, you must set up your own repsitory for development.
+
+#### Prerequisites ####
 
 * **WordPress Development Environment:** Installation assumes you have a [WordPress development environment] (<https://developer.wordpress.org/themes/getting-started/setting-up-a-development-environment/>) set up. My preferred local development tool is [Lando](https://lando.dev/).
 * **WooCommerce plugin:** This is an eCommerce theme intended for sites that use [WooCommerce](https://woocommerce.com/).
@@ -38,12 +50,12 @@ The purpose of developing this theme is to add customizations such as Google Ana
     Herm71@blackbird:$ npm -i -g gulp
     ```
 
-### Install ###
+#### Install ####
 
 1. Clone into your Wordpress dev environment's `/themes/` folder:
 
     ```shell
-    Herm71@blackbird:$ git clone git@github.com:Herm71/hds-storefront-child.git / myWpLocalDev/wp-content/themes/hds-storefront-child/
+    Herm71@blackbird:$ git clone git@github.com:Herm71/hds-storefront-child.git /myWpLocalDev/wp-content/themes/hds-storefront-child/
     ```
 
 2. `cd` into newly created folder
@@ -58,7 +70,7 @@ The purpose of developing this theme is to add customizations such as Google Ana
     Herm71@blackbird:$ npm install
     ```
 
-## Gulp tasks ##
+### Gulp tasks ###
 
 The `gulpfile.babel.js` file has several tasks available for use. Look at the actual file to see all of them. There are tasks that I do not use here. Feel free to incorporate them into your own workflow. Below are the tasks I use most often:
 
