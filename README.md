@@ -18,5 +18,4 @@ And also some other stuff.
 
 - [ ] Sidebar Template
 - [ ] Style Checkout
-- [x] Style Shopping Cart
-- [ ] Mercury
+- [ ] Style Shopping Cart
