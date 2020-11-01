@@ -11,7 +11,7 @@
  */
 
  //TODO: #14 Sidebar Template
- //TODO: Style Top bar nav drop-down
+ //TODO: #20 Style Top bar nav drop-down
  //TODO: All Hex colors to variables
  //TODO: Style Widget Titles
  //TODO: Global: Style Entry Headers
