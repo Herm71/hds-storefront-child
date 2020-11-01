@@ -14,12 +14,12 @@ The purpose of developing this theme is to add customizations such as Google Ana
 
 And also some other stuff.
 
-### Developer ###
+## Developer ##
 
 * [Jason Chafin](https://github.com/Herm71)
 
-### Roadmap ###
+## Roadmap ##
 
-- [ ] Sidebar Template
-- [ ] Style Checkout
-- [ ] Style Shopping Cart
+* [ ] Sidebar Template
+* [ ] Style Checkout
+* [ ] Style Shopping Cart
