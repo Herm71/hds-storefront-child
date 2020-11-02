@@ -5,7 +5,7 @@
 
 ## Summary
 
-WordPress child theme of WooCommerce [Storefront](https://woocommerce.com/storefront/) theme. Can be used on any WordPress/WooCommerce site that has Storefront installed. Design inspiration from [WooCommerce Homestore](https://themes.woocommerce.com/homestore/) child theme.
+WordPress child theme of WooCommerce [Storefront](https://woocommerce.com/storefront/) theme. Can be used on any WordPress/WooCommerce site that has Storefront installed. Design inspiration from WooCommerce [Homestore](https://themes.woocommerce.com/homestore/) child theme.
 
 ## Installation ##
 
