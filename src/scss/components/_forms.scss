@@ -7,7 +7,7 @@ textarea,
 .input-text {
     transition: background-color .1s ease-in-out, box-shadow .1s ease-in-out;
     border: solid 2px $color_border-input;
-    background: $color_white;
+    background: $color_white-true;
     box-shadow: none;
 }
 
@@ -30,19 +30,6 @@ input[type="submit"].alt,
     background-color: $hds_brown!important;
     border-color: $hds_brown!important;
     color: $color_white!important;
-}
-
-.added_to_cart,
-.site-header-cart .widget_shopping_cart a.button,
-.wc-block-grid__products .wc-block-grid__product .wp-block-button__link {
-    background-color: $hds_orange!important;
-    border-color: $hds_orange!important;
-    color: $color_white!important;
-    &:hover {
-        background-color: $hds_orange-hover!important;
-        border-color: $hds_orange-hover !important;
-        color: $color_white!important;
-    }
 }
 
 .woocommerce-active {
