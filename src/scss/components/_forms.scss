@@ -7,7 +7,7 @@ textarea,
 .input-text {
     transition: background-color .1s ease-in-out, box-shadow .1s ease-in-out;
     border: solid 2px $color_border-input;
-    background: $color_white;
+    background: $color_white-true;
     box-shadow: none;
 }
 
@@ -29,20 +29,7 @@ input[type="submit"].alt,
 .widget-area .widget a.button.alt {
     background-color: $hds_brown!important;
     border-color: $hds_brown!important;
-    color: #fcfcfc!important;
-}
-
-.added_to_cart,
-.site-header-cart .widget_shopping_cart a.button,
-.wc-block-grid__products .wc-block-grid__product .wp-block-button__link {
-    background-color: $hds_orange!important;
-    border-color: $hds_orange!important;
     color: $color_white!important;
-    &:hover {
-        background-color: #be6416 !important;
-        border-color: #be6416 !important;
-        color: $color_white!important;
-    }
 }
 
 .woocommerce-active {
@@ -99,7 +86,7 @@ input[type="submit"].alt,
                         color: inherit;
                         background: $color_white;
                         margin: -.6em 0 0;
-                        color: #141212;
+                        color: $color_text-input;
                         text-align: center;
                         font-size: 1em;
                         float: right;
@@ -117,7 +104,7 @@ input[type="submit"].alt,
                         background: $color_white;
                         padding: .6em 0 .6em .8em;
                         padding-left: 2.8em;
-                        color: #150604;
+                        color: $color_text-main;
                         &::after {
                             float: left;
                             margin-left: -1.8em;
@@ -134,7 +121,7 @@ input[type="submit"].alt,
         &::before {
             top: 1.15em!important;
             left: .85em!important;
-            color: #111!important;
+            color: $color_text-input!important;
             font-size: 1.05em;
         }
     }

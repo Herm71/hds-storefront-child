@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.7](https://github.com/Herm71/hds-storefront-child/compare/v1.4.6...v1.4.7) (2020-11-02)
+
+
+### Bug Fixes
+
+* :bug: version sync ([f6f79fb](https://github.com/Herm71/hds-storefront-child/commit/f6f79fb83548ed7612b8825fb99fdcb059449d20))
+
+### [1.4.6](https://github.com/Herm71/hds-storefront-child/compare/v1.4.5...v1.4.6) (2020-11-02)
+
+
+### Bug Fixes
+
+* :lipstick: All Hex colors to variables ([78882db](https://github.com/Herm71/hds-storefront-child/commit/78882db4600941c075133bd4effc99486e35ba37)), closes [#24](https://github.com/Herm71/hds-storefront-child/issues/24)
+* :lipstick: Refactoring of CSS to account for Customizer options ([d3a1a3d](https://github.com/Herm71/hds-storefront-child/commit/d3a1a3d8663839f0f72df6e75fa0ed45edbd7bdc))
+
 ### [1.4.5](https://github.com/Herm71/hds-storefront-child/compare/v1.4.4...v1.4.5) (2020-11-01)
 
 

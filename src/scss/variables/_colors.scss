@@ -4,6 +4,7 @@
 $hds_brown: #362422;
 $hds_red: #741F1A;
 $hds_orange: #F5821F;
+$hds_orange-hover: #be6416;
 $hds_green: #A5CE3A;
 //
 // General Colors
@@ -14,8 +15,9 @@ $color_background-hr: #ccc;
 $color_background-button: $hds_red;
 $color_background-pre: #eee;
 $color_background-ins: #fff9c0;
+$color_background-utility: #f5f5f5;
 $color_text-screen: #21759b;
-$color_text-input: #666;
+$color_text-input: #141212;
 $color_text-input-focus: #111;
 $color_link: $hds_red;
 $color_link-visited: $hds_red;
@@ -27,7 +29,9 @@ $color_border-button-focus: #aaa #bbb #bbb;
 $color_border-input: #e2e2e2;
 $color_border-abbr: #666;
 $color_white: #fcfcfc;
+$color_white-true: #ffffff;
 $color_black: #151515;
 $color_red: #f36855;
+$color_gray-dark: #a2a1a1;
 // Gradients
 $hds_gradient-ltr: linear-gradient(15deg, #003c6c, #006aad);
