@@ -60,7 +60,10 @@ a.cart-contents,
     color: $color_white!important;
 }
 
-.site-header-cart .widget_shopping_cart .product_list_widget .mini_cart_item a.remove:before {
+// .site-header-cart .widget_shopping_cart .product_list_widget .mini_cart_item a.remove:before {
+//     color: $color_red!important;
+// }
+a.remove:before {
     color: $color_red!important;
 }
 
