@@ -10,10 +10,7 @@
  *
  */
 
- //TODO: #14 Sidebar Template
- //TODO: All Hex colors to variables
- //TODO: Global: Style Entry Headers
-/**
+ /**
  * Setup
  */
 

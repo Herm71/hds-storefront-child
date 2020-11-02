@@ -90,6 +90,4 @@ Herm71@blackbird:$ gulp build
 
 ## Roadmap ##
 
-* [ ] Sidebar Template
-* [x] Style Checkout
-* [x] Style Shopping Cart
+see [Roadmap](TODOS.md)
