@@ -82,7 +82,3 @@ Herm71@blackbird:$ gulp build
 ## Developer ##
 
 * [Jason Chafin](https://github.com/Herm71)
-
-## Roadmap ##
-
-see [Roadmap](TODOS.md)
