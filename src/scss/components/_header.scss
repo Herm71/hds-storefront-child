@@ -11,6 +11,14 @@
             position: relative;
         }
     }
+    .site-branding,
+    .site-title,
+    .site-description {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .site-title {}
     .site-description {
         @include media-query($on-large-screen) {
             margin-top: .2em;

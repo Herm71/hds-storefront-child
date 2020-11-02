@@ -1,15 +1,39 @@
 #page {
     #site-navigation {
-        border-bottom-color: $hds_brown;
+        border-bottom-color: $hds_red;
     }
 }
 
 #site-navigation {
     border-bottom: solid 9px $hds_brown;
     width: 100%;
+    @include media-query-max($on-desktop) {
+        padding-top: 0;
+        border-bottom: none;
+        background: $hds_red;
+        font-size: 0.9em;
+        .menu-toggle {
+            display: block;
+            background: $hds_brown;
+            font-size: 1.05em;
+            font-weight: 600;
+            margin: 1em auto 0;
+            float: none;
+        }
+    }
+}
+
+.main-navigation {
+    padding-top: 1.3em;
+    @include media-query($on-desktop) {
+        border-bottom: solid 9px $hds_brown;
+    }
 }
 
 .primary-navigation {
+    @include media-query ($on-desktop) {
+        display: block;
+    }
     .sub-menu {
         a {
             color: $color_white;
@@ -58,6 +82,9 @@
 
 .site-header {
     .storefront-primary-navigation {
-        background-color: $color_white;
+        background-color: transparent;
+        @include media-query($on-desktop) {
+            background-color: $color_white;
+        }
     }
 }

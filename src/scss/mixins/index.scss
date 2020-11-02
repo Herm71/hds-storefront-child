@@ -17,6 +17,12 @@
     }
 }
 
+@mixin media-query-max($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
 //
 // Font Sizes
 //===============================
