@@ -1,3 +1,50 @@
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+textarea,
+.input-text {
+    transition: background-color .1s ease-in-out, box-shadow .1s ease-in-out;
+    border: solid 2px $color_border-input;
+    background: $color_white;
+    box-shadow: none;
+}
+
+button:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover,
+.button:hover,
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover,
+.added_to_cart:hover {
+    color: $color_white!important;
+}
+
+button.alt,
+input[type="button"].alt,
+input[type="reset"].alt,
+input[type="submit"].alt,
+.button.alt,
+.widget-area .widget a.button.alt {
+    background-color: $hds_brown!important;
+    border-color: $hds_brown!important;
+    color: #fcfcfc!important;
+}
+
+.added_to_cart,
+.site-header-cart .widget_shopping_cart a.button,
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link {
+    background-color: $hds_orange!important;
+    border-color: $hds_orange!important;
+    color: $color_white!important;
+    &:hover {
+        background-color: #be6416 !important;
+        border-color: #be6416 !important;
+        color: $color_white!important;
+    }
+}
+
 .woocommerce-active {
     .site-header {
         .site-search {

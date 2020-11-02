@@ -1,0 +1,27 @@
+table {
+    border-top: solid 2px $hds_brown;
+    border-bottom: solid 2px $hds_brown;
+    tbody {
+        td {
+            a {
+                transition: color 80ms ease-in-out;
+                color: $color_text-main;
+                font-weight: 600;
+                &:hover {
+                    color: $hds_orange;
+                }
+            }
+        }
+        tr {
+            &:last-child {
+                td {
+                    &.actions {
+                        border-top: solid 1px #e1e1e1;
+                        padding-top: 1em;
+                        padding-bottom: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
