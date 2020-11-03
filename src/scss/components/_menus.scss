@@ -121,6 +121,13 @@
     top: .1em;
 }
 
+.storefront-handheld-footer-bar ul li.cart .count {
+    background-color: $color_white !important;
+    color: $color_text-main !important;
+    border-color: $color_text-main !important;
+}
+
+// end refactor
 .primary-navigation {
     @include media-query ($on-desktop) {
         display: block;
