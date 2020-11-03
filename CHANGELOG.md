@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/Herm71/hds-storefront-child/compare/v1.5.0...v1.6.0) (2020-11-03)
+
+
+### Features
+
+* :art: 💄 🚀 Responsive Header ([faa6a8e](https://github.com/Herm71/hds-storefront-child/commit/faa6a8e2e955b36cc196c3b8187ef1446219dd98)), closes [#29](https://github.com/Herm71/hds-storefront-child/issues/29) [#29](https://github.com/Herm71/hds-storefront-child/issues/29)
+
+
+### Bug Fixes
+
+* 💄 🚧 work in progress responsive header ([a2fd7fe](https://github.com/Herm71/hds-storefront-child/commit/a2fd7fe042a09bfd87db7c172150d8041a8e65a3))
+
+## [1.5.0](https://github.com/Herm71/hds-storefront-child/compare/v1.4.7...v1.5.0) (2020-11-03)
+
+
+### Features
+
+* :art: Mobile Header dialed ([f0105a5](https://github.com/Herm71/hds-storefront-child/commit/f0105a59770dbb6d4a0749c72d9df485634b456d))
+
+
+### Bug Fixes
+
+* :art: :lipstick? Header mobile ([0c38674](https://github.com/Herm71/hds-storefront-child/commit/0c386748b0033305040fd983cab7d75d7d84a031))
+
 ### [1.4.7](https://github.com/Herm71/hds-storefront-child/compare/v1.4.6...v1.4.7) (2020-11-02)
 
 

@@ -1,42 +1,140 @@
 #page {
     #site-navigation {
-        border-bottom-color: $hds_brown;
+        border-bottom-color: $hds_red;
     }
 }
 
 #site-navigation {
     border-bottom: solid 9px $hds_brown;
     width: 100%;
+    @include media-query-max($on-desktop) {
+        padding-top: 0;
+        border-bottom: none;
+        background: $hds_brown;
+        font-size: 0.9em;
+        clear: both;
+        .menu-toggle {
+            display: block;
+            background-color: $hds_brown;
+            font-size: 1.05em;
+            font-weight: 600;
+            margin: 0 auto;
+            float: none;
+            color: $color_white!important;
+            border: none!important;
+            &::before {
+                background-color: $color_white!important;
+            }
+        }
+    }
+    ul {
+        li {
+            a {
+                color: $color_white;
+                @include media-query-max($on-desktop) {
+                    padding-top: 0.875em;
+                    padding-bottom: 0.875em;
+                    font-weight: 600;
+                    border-top: solid 1px rgba(255, 255, 255, .05);
+                }
+                @include media-query($on-desktop) {
+                    color: $hds_brown;
+                    font-weight: 400;
+                    padding-left: 0.5em;
+                    padding-right: 0.5em;
+                }
+            }
+            &:first-child {
+                a {
+                    @include media-query($on-desktop) {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
+//
+// Main and Secondary Navs
+//
+// Anchor tags
+.main-navigation,
+.secondary-navigation {
+    ul {
+        ul {
+            li {
+                &:hover {
+                    background: $hds_brown
+                }
+                a {
+                    color: $color_white!important;
+                    padding: 1em 0.875em!important;
+                    &:hover {
+                        color: $color_white!important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-navigation {
+    padding-top: 1.3em!important;
+    @include media-query($on-desktop) {
+        border-bottom: solid 9px $hds_brown;
+    }
+    ul {
+        li {
+            a {
+                padding-bottom: 1.3em !important;
+                @include media-query-max($on-desktop) {
+                    padding-left: 1.75em;
+                }
+                @include media-query($on-desktop) {
+                    transition: color 80ms ease-in-out;
+                    color: $hds_brown;
+                    padding-top: 0!important;
+                }
+            }
+        }
+        &.menu,
+        &.nav-menu {
+            @include media-query($on-desktop) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+//
+// Nav link icons
+// TODO: Refactor this code
+//
+.main-navigation ul.menu>li.menu-item-has-children>a:after,
+.main-navigation ul.menu>li.page_item_has_children>a:after,
+.main-navigation ul.nav-menu>li.menu-item-has-children>a:after,
+.main-navigation ul.nav-menu>li.page_item_has_children>a:after {
+    position: relative;
+    color: $color_gray;
+    margin-left: .4em;
+    top: .1em;
+}
+
+.storefront-handheld-footer-bar ul li.cart .count {
+    background-color: $color_white !important;
+    color: $color_text-main !important;
+    border-color: $color_text-main !important;
+}
+
+// end refactor
 .primary-navigation {
+    @include media-query ($on-desktop) {
+        display: block;
+    }
     .sub-menu {
         a {
             color: $color_white;
-        }
-    }
-}
-
-.secondary-navigation {
-    ul {
-        &.menu {
-            a {
-                color: $color_white;
-            }
-        }
-    }
-    ul.sub-menu {
-        li {
-            background: $hds_red;
-            &:hover {
-                background: $hds_brown
-            }
-            a {
-                padding: 1em 0.875em!important;
-                &:hover {
-                    color: $color_white!important;
-                }
-            }
         }
     }
 }
@@ -58,6 +156,9 @@
 
 .site-header {
     .storefront-primary-navigation {
-        background-color: $color_white;
+        background-color: transparent;
+        @include media-query($on-desktop) {
+            background-color: $color_white;
+        }
     }
 }
