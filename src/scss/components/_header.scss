@@ -14,9 +14,14 @@
     .site-branding,
     .site-title,
     .site-description {
-        width: 100%;
         max-width: 100%;
-        text-align: center;
+        @include media-query-max($on-desktop) {
+            width: 100%;
+            text-align: center;
+        }
+        @include media-query($on-desktop) {
+            text-align: left;
+        }
     }
     .site-title {}
     .site-description {
