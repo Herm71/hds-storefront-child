@@ -20,8 +20,16 @@
     }
     .site-title {}
     .site-description {
+        margin-top: 1em;
+        margin-bottom: 0;
         @include media-query($on-large-screen) {
             margin-top: .2em;
+        }
+    }
+    .storefront-primary-navigation {
+        @include media-query-max($on-desktop) {
+            background: 0 0 !important;
+            padding-bottom: ($spacing-unit / 2);
         }
     }
 }
@@ -33,11 +41,24 @@
     border-bottom: none;
     // background-color: $hds_brown;
     .site-branding {
+        @include media-query-max($on-desktop) {
+            padding: 1.75em 0
+        }
         padding: 3em 0;
         margin-bottom: 0;
         color: $color_white;
+        .site-title,
         .site-description {
-            border-left-color: $color_white;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+            color: $color_white;
+        }
+        .site-description {
+            margin-top: 1em;
+            font-size: .85em;
+            display: block;
+            @include media-query($on-desktop) {
+                border-left-color: $color_white;
+            }
         }
         .site-title,
         .site-title a,
