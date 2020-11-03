@@ -47,15 +47,16 @@ input[type="submit"].alt,
             }
         }
         .site-header-cart {
-            @include media-query($on-desktop) {
-                position: absolute;
-                transform: translateY(-50%);
-                margin-top: -1em;
-                padding-top: 0;
-                width: 15em!important;
-                top: 45%;
-                right: 2.617924em;
-                z-index: 1;
+            position: absolute;
+            transform: translateY(-50%);
+            margin-top: -1em;
+            padding-top: 0;
+            width: 15em!important;
+            right: 2.617924em;
+            z-index: 1;
+            top: 50%;
+            @include media-query($on-large-screen) {
+                top: 72%;
             }
             .cart-contents {
                 @include media-query($on-desktop) {
