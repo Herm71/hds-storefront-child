@@ -84,6 +84,18 @@
     }
 }
 
+// Nav Margins
+// =================================
+.hds-header-bar,
+.storefront-primary-navigation {
+    @include media-query ($on-desktop) {
+        margin-left: -9999px;
+        margin-right: -9999px;
+        padding-left: 9999px;
+        padding-right: 9999px;
+    }
+}
+
 // Top Bar
 // =================================
 .hds-header-bar {
@@ -93,10 +105,6 @@
         border-bottom: solid 1px rgba(255, 255, 255, .2);
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        margin-left: -9999px;
-        margin-right: -9999px;
-        padding-left: 9999px;
-        padding-right: 9999px;
     }
     .top-navigation {
         margin-bottom: 0;

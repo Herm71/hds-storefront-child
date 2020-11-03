@@ -37,25 +37,51 @@
                     font-weight: 600;
                     border-top: solid 1px rgba(255, 255, 255, .05);
                 }
+                @include media-query($on-desktop) {
+                    color: $hds_brown;
+                    font-weight: 400;
+                    padding-left: 0.5em;
+                    padding-right: 0.5em;
+                }
             }
         }
     }
 }
 
 .main-navigation {
-    padding-top: 1.3em;
+    padding-top: 1.3em!important;
     @include media-query($on-desktop) {
         border-bottom: solid 9px $hds_brown;
     }
-    @include media-query-max($on-desktop) {
-        ul {
-            li {
-                a {
+    ul {
+        li {
+            a {
+                padding-bottom: 1.3em !important;
+                @include media-query-max($on-desktop) {
                     padding-left: 1.75em;
+                }
+                @include media-query($on-desktop) {
+                    transition: color 80ms ease-in-out;
+                    color: $hds_brown;
+                    padding-top: 0!important;
                 }
             }
         }
     }
+}
+
+//
+// Nav link icons
+// TODO: Refactor this code
+//
+.main-navigation ul.menu>li.menu-item-has-children>a:after,
+.main-navigation ul.menu>li.page_item_has_children>a:after,
+.main-navigation ul.nav-menu>li.menu-item-has-children>a:after,
+.main-navigation ul.nav-menu>li.page_item_has_children>a:after {
+    position: relative;
+    color: $color_gray;
+    margin-left: .4em;
+    top: .1em;
 }
 
 .primary-navigation {
@@ -116,5 +142,3 @@
         }
     }
 }
-
-.handheld-navigation {}
