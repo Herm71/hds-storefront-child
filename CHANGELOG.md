@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/Herm71/hds-storefront-child/compare/v1.4.7...v1.5.0) (2020-11-03)
+
+
+### Features
+
+* :art: Mobile Header dialed ([f0105a5](https://github.com/Herm71/hds-storefront-child/commit/f0105a59770dbb6d4a0749c72d9df485634b456d))
+
+
+### Bug Fixes
+
+* :art: :lipstick? Header mobile ([0c38674](https://github.com/Herm71/hds-storefront-child/commit/0c386748b0033305040fd983cab7d75d7d84a031))
+
 ### [1.4.7](https://github.com/Herm71/hds-storefront-child/compare/v1.4.6...v1.4.7) (2020-11-02)
 
 
