@@ -10,15 +10,34 @@
     @include media-query-max($on-desktop) {
         padding-top: 0;
         border-bottom: none;
-        background: $hds_red;
+        background: $hds_brown;
         font-size: 0.9em;
+        clear: both;
         .menu-toggle {
             display: block;
-            background: $hds_brown;
+            background-color: $hds_brown;
             font-size: 1.05em;
             font-weight: 600;
-            margin: 1em auto 0;
+            margin: 0 auto;
             float: none;
+            color: $color_white!important;
+            border: none!important;
+            &::before {
+                background-color: $color_white!important;
+            }
+        }
+    }
+    ul {
+        li {
+            a {
+                color: $color_white;
+                @include media-query-max($on-desktop) {
+                    padding-top: 0.875em;
+                    padding-bottom: 0.875em;
+                    font-weight: 600;
+                    border-top: solid 1px rgba(255, 255, 255, .05);
+                }
+            }
         }
     }
 }
@@ -27,6 +46,15 @@
     padding-top: 1.3em;
     @include media-query($on-desktop) {
         border-bottom: solid 9px $hds_brown;
+    }
+    @include media-query-max($on-desktop) {
+        ul {
+            li {
+                a {
+                    padding-left: 1.75em;
+                }
+            }
+        }
     }
 }
 
@@ -88,3 +116,5 @@
         }
     }
 }
+
+.handheld-navigation {}
