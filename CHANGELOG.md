@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/Herm71/hds-storefront-child/compare/v1.5.0...v1.6.0) (2020-11-03)
+
+
+### Features
+
+* :art: 💄 🚀 Responsive Header ([faa6a8e](https://github.com/Herm71/hds-storefront-child/commit/faa6a8e2e955b36cc196c3b8187ef1446219dd98)), closes [#29](https://github.com/Herm71/hds-storefront-child/issues/29) [#29](https://github.com/Herm71/hds-storefront-child/issues/29)
+
+
+### Bug Fixes
+
+* 💄 🚧 work in progress responsive header ([a2fd7fe](https://github.com/Herm71/hds-storefront-child/commit/a2fd7fe042a09bfd87db7c172150d8041a8e65a3))
+
 ## [1.5.0](https://github.com/Herm71/hds-storefront-child/compare/v1.4.7...v1.5.0) (2020-11-03)
 
 
