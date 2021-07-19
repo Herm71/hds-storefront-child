@@ -38,7 +38,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-wp-pot": "^2.5.0",
     "gulp-zip": "^5.0.2",
-    "postcss": "^8.1.2",
+    "postcss": "^8.2.10",
     "vinyl-named": "^1.1.0",
     "webpack-stream": "^6.1.0",
     "yargs": "^16.1.0"
